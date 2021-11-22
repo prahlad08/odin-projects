@@ -1,56 +1,101 @@
-*{
-    padding :0;
-    margin:0;
+* {
+  padding: 0;
+  margin: 0;
 }
-.nav-bar{
-    margin:0 250px 0 250px;
-    height: 75px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5%;
+.nav-bar {
+  margin: 0 250px 0 250px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
 }
-.nav-items,.nav-logo{
-    color :white;
+.nav-items,
+.nav-logo {
+  color: white;
 }
-.nav-logo{
-    font-weight: 500;
+.nav-logo {
+  font-weight: 700;
 }
-.target{
-    margin-left:auto;
+.target {
+  margin-left: auto;
 }
-.header{
-    background-color: #1f2937;
-    color:white;
+.header {
+  background-color: #1f2937;
+  color: white;
+}
+.header-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10%;
+  box-sizing: border-box;
+  margin: 0 250px 0 250px;
+  padding: 100px 0 100px 0;
+}
+
+@media (min-width: 1200px) {
+  .header-info > div {
+    flex: 1 0 45%;
+    height: 200px;
+  }
+  .cards{
+      display: flex;
+      justify-content: space-evenly;
+      gap:5%;
+      margin:20px 20% 0 20%;
+  }
   
 }
-.header-info{
-    display: flex;
-    flex-wrap: wrap;
-    gap:10%;
-    box-sizing: border-box;
-    margin:0 250px 0 250px;
-    padding: 100px 0 100px 0;
-    
+@media (max-width: 1200px) {
+  .header-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  .header-info > div {
+    flex-basis: 100%;
+  }
 }
-.header-text,.header-img{
+/* .header-text,.header-img{
     box-sizing: border-box;
 width:calc(45%);
 height:200px;
+} */
+h1,
+p {
+  margin-bottom: 10px;
 }
-h1,p{
-    margin-bottom:10px;
+.header-img img {
+  width: 100%;
+  height: 100%;
 }
-.header-img img{
-    width:100%;
-    height:100%;
+button {
+  outline: none;
+  display: inline-block;
+  background-color: #3882f6;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px 05px 10px;
+  color: white;
 }
-button{
-    outline: none;
-    display: inline-block;
-    background-color: #3882F6;
-    border: none;
-    border-radius: 10px;
-    padding:5px 10px 05px 10px;
-    color:white;
+.random-info{
+    margin:20px 10% 0 10%;
+}
+.random-info h1{
+    text-align: center;
+}
+.random-card{
+    display: flex;
+    flex-direction: column; 
+    flex:0 0 20%;
+    gap:10px;
+}
+.random-pic{
+    min-height: 160px;
+    border: 5px solid black;
+    border-radius: 20px;
+}
+.random-details{
+    flex:1 0  25%;
+    text-align: center;
 }
