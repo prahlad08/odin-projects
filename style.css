@@ -3,7 +3,7 @@
   margin: 0;
 }
 .nav-bar {
-  margin: 0 250px 0 250px;
+  margin: 0 15% 0 15%;
   height: 75px;
   display: flex;
   align-items: center;
@@ -29,22 +29,24 @@
   flex-wrap: wrap;
   gap: 10%;
   box-sizing: border-box;
-  margin: 0 250px 0 250px;
+  margin: 0 15% 0 15%;
   padding: 100px 0 100px 0;
 }
-
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap:5%;
+    margin:20px 20% 40px 20%;
+}
 @media (min-width: 1200px) {
   .header-info > div {
     flex: 1 0 45%;
     height: 200px;
   }
-  .cards{
-      display: flex;
-      justify-content: space-evenly;
-      gap:5%;
-      margin:20px 20% 0 20%;
-  }
-  
+  .random-card{
+    flex-basis:20%;
+}
 }
 @media (max-width: 1200px) {
   .header-info {
@@ -55,6 +57,14 @@
   .header-info > div {
     flex-basis: 100%;
   }
+  .random-card{
+    flex-basis:42%;
+}
+}
+@media (max-width: 900px) {
+    .random-card{
+        flex-basis:100%;
+    }
 }
 /* .header-text,.header-img{
     box-sizing: border-box;
@@ -75,11 +85,13 @@ button {
   background-color: #3882f6;
   border: none;
   border-radius: 10px;
-  padding: 5px 10px 05px 10px;
+  padding: 8px 10px 8px 10px;
   color: white;
+  font-weight: 700;
+  font-size: 18px;
 }
 .random-info{
-    margin:20px 10% 0 10%;
+    margin:50px 10% 50px 10%;
 }
 .random-info h1{
     text-align: center;
@@ -87,7 +99,6 @@ button {
 .random-card{
     display: flex;
     flex-direction: column; 
-    flex:0 0 20%;
     gap:10px;
 }
 .random-pic{
@@ -98,4 +109,39 @@ button {
 .random-details{
     flex:1 0  25%;
     text-align: center;
+}
+.comment{
+    background-color: lightgray;
+    padding:50px 25% 50px 25%;
+    font-size: 24px;
+}
+.author{
+    text-align: right;
+    font-weight: 700;
+}
+.footer{
+    background-color:  #3882f6;
+    border-radius:20px;
+    border: 5px solid white;
+    margin:5% 25% 5% 25%;
+    padding:2%;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer-text{
+    display:flex;
+    flex-direction: column;
+}
+.bolder{
+font-weight: 700;
+font-size: 20px;
+}
+.normal{
+    font-size: 16px;
+}
+.footer button{
+    border: 3px solid white;
+    width:100px;
+    height: 50px;
 }
